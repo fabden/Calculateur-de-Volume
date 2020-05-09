@@ -6,7 +6,7 @@ return(
     
     <div className="card">      
       <div className="card-body">
-        <p className="card-text">Some quiof .</p>
+        <p className="card-text"></p>
       </div> 
       <div className="card-footer row justify-content-around">
         <button type="button" className="btn btn-danger">+</button>
