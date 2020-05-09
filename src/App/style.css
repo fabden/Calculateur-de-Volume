@@ -1,4 +1,14 @@
 
+li{
+    cursor: pointer;
+}
+
+.liste{
+    height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
 
 
 
