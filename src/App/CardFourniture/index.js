@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CartMeuble = ({data})=>{ 
+const CartMeuble = ({data,addFourniture,souFourniture})=>{ 
 
 return(
     
@@ -9,9 +9,9 @@ return(
         <p className="card-text text-center">{data.Nom}</p>
       </div> 
       <div className="card-footer row justify-content-around">
-        <button type="button" className="btn btn-danger">+</button>
-          <p className="col-1">{data.Quantité}</p>
-        <button type="button" className="btn btn-success">-</button>
+        <button type="button" className="btn btn-danger" onClick={()=>addFourniture(data.id)}>+</button>
+          <p className="col-4 text-center">{data.nombreFou}</p>
+        <button type="button" className="btn btn-success" onClick={()=>souFourniture(data.id)}>-</button>
       </div>   
     </div>
   
