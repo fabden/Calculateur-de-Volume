@@ -5,10 +5,12 @@ import datasFourniture from '../Datas';
 
 function App() {
 
+ //state données et menu
+
 const [datas, setDatas] = useState([...datasFourniture]);
 const [menu, setMenu] = useState("Salon");
 
-// addition soustration 
+// addition soustration des elements
 
 const addFourniture = (id)=>{
   const newdatas = datas.map((data)=>((data.id === id) ? ({...data, nombreFou:data.nombreFou + 1 }) : ({...data}) ));
@@ -20,15 +22,15 @@ const souFourniture = (id)=>{
   setDatas(newdatas);
 };
 
-// selecteur pour estimation de volumes
+// selecteur pour afficher element dans liste 
 
 const filterFourniture = datas.filter((d)=> d.nombreFou >0);
 
-//somme des volume 
+//somme volume des elements de la listes 
 
 const total = datas.map((d) => d.Volumes * d.nombreFou).reduce((totale, d) => totale + d, 0);
 
-//fonction selection menu
+//selecteur en fonction du  menu
 const selectMenu = datas.filter((d)=>d.Categorie===menu);
 
 
