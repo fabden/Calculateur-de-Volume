@@ -71,18 +71,16 @@ const selectMenu = datas.filter((d)=>d.Categorie===menu);
             </div>
           </div> 
           </div>
-
-
         </div>         
-        <div className=' border border-warning rounded-lg col-lg-4 col-sm-12 col-9'>
+        <div className=' border border-warning rounded-lg col-lg-4 col-sm-12 col-9 my-2'>
         <div className="row justify-content-center  ">
-          <p className='bg-warning text-center col-12 p-3 my-n1 h1 font-weight-bold align-items-start '>Listes </p>
+          <p className='bg-warning text-center col-12 p-3  h1 font-weight-bold align-items-start '>Listes </p>
         </div>    
         <div className="liste ">
          {filterFourniture.map((d) => 
-          <div className="row border-bottom border-warning ">
+          <div className="row border-bottom border-warning " key= {d.id}>
           <div className="col-9">
-          <p className='  m-2'key= {d.id}>{d.nombreFou} x {d.Nom}</p>
+          <p className='  m-2'>{d.nombreFou} x {d.Nom}</p>
           </div>
           <div className="col-1">
           <button type="button " className="btn btn-outline-dark font-weight-bold py-0 m-2" onClick={()=>souFourniture(d.id)}>-</button>
