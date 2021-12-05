@@ -11,7 +11,7 @@
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1"
   },
-  "homepage": "/fabden/Travaux/calculateur-de-volume",
+  "homepage": "/Travaux/calculateur-de-volume",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
